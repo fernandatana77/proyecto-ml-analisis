@@ -1,0 +1,147 @@
+{
+  "total_filas": 8000,
+  "nulos_por_columna": {
+    "cuerpo": 0,
+    "estrellas": 0,
+    "sentimiento_original": 0,
+    "categoria": 0,
+    "split_origen": 0
+  },
+  "textos_vacios": 0,
+  "duplicados_exactos": 20,
+  "duplicados_normalizados": 21,
+  "distribucion_estrellas": {
+    "1": 1977,
+    "2": 2023,
+    "4": 1977,
+    "5": 2023
+  },
+  "longitud_caracteres": {
+    "min": 20.0,
+    "p1": 22.0,
+    "p25": 66.0,
+    "p50": 119.0,
+    "p75": 186.0,
+    "p99": 675.0100000000002,
+    "max": 1323.0
+  },
+  "longitud_palabras": {
+    "min": 2.0,
+    "p1": 4.0,
+    "p25": 12.0,
+    "p50": 22.0,
+    "p75": 34.0,
+    "p99": 123.0,
+    "max": 252.0
+  },
+  "con_mojibake": 0,
+  "con_html": 0,
+  "con_url": 0,
+  "con_emoji": 44,
+  "muy_cortas_lt3_palabras": 6,
+  "muy_largas_gt_p99": 78,
+  "neutrales_3_estrellas": 0,
+  "distribucion_categorias": {
+    "home": 1077,
+    "wireless": 1068,
+    "toy": 532,
+    "sports": 523,
+    "pc": 449,
+    "home_improvement": 399,
+    "electronics": 391,
+    "beauty": 307,
+    "automotive": 281,
+    "kitchen": 277,
+    "drugstore": 232,
+    "apparel": 223,
+    "office_product": 223,
+    "book": 208,
+    "baby_product": 205,
+    "furniture": 189,
+    "lawn_and_garden": 179,
+    "other": 177,
+    "pet_products": 143,
+    "personal_care_appliances": 142,
+    "luggage": 135,
+    "shoes": 122,
+    "camera": 110,
+    "video_games": 70,
+    "digital_ebook_purchase": 66,
+    "jewelry": 63,
+    "musical_instruments": 62,
+    "industrial_supplies": 57,
+    "watch": 46,
+    "grocery": 44
+  },
+  "idioma_declarado": "columna no disponible en este dataset",
+  "idioma_detectado_muestra": {
+    "es": 1960,
+    "pt": 23,
+    "en": 4,
+    "ca": 4,
+    "fr": 3,
+    "tl": 2,
+    "it": 2,
+    "lt": 1,
+    "so": 1
+  },
+  "muestra_idioma_n": 2000,
+  "embudo_limpieza": [
+    {
+      "paso": "registros_crudos",
+      "filas": 8000
+    },
+    {
+      "paso": "sin_nulos_ni_vacios",
+      "filas": 8000
+    },
+    {
+      "paso": "sin_neutrales_3_estrellas",
+      "filas": 8000
+    },
+    {
+      "paso": "sin_duplicados",
+      "filas": 7979
+    },
+    {
+      "paso": "solo_espanol_detectado",
+      "filas": 7918
+    },
+    {
+      "paso": "con_al_menos_2_tokens_utiles",
+      "filas": 7913
+    },
+    {
+      "paso": "train_tras_balanceo",
+      "filas": 5508
+    }
+  ],
+  "ruido_detectado": {
+    "mojibake_detectado": 0,
+    "con_html": 0,
+    "con_url": 0,
+    "con_letras_repetidas": 696,
+    "con_emoji": 42,
+    "discrepancias_con_columna_sentiment_original": 0
+  },
+  "duplicados_entre_splits_eliminados_de_train": 13,
+  "train_descartadas_por_balanceo": 18,
+  "splits": {
+    "train": {
+      "filas": 5508,
+      "negativo": 2754,
+      "positivo": 2754
+    },
+    "val": {
+      "filas": 1187,
+      "negativo": 595,
+      "positivo": 592
+    },
+    "test": {
+      "filas": 1187,
+      "negativo": 595,
+      "positivo": 592
+    }
+  },
+  "particion": "Opción B: 70/15/15 estratificada, random_state=42 (dataset de un solo archivo)"
+}
