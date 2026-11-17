@@ -1,0 +1,72 @@
+{
+  "n_revisados": 30,
+  "criterio": "30 errores de prueba con mayor confianza equivocada (reports/errores.csv, filas 0-29), clasificados a mano por lectura",
+  "categorias": {
+    "etiqueta_ruidosa": {
+      "n": 11,
+      "pct": 36.7,
+      "ids": [
+        2,
+        4,
+        7,
+        11,
+        12,
+        13,
+        14,
+        16,
+        19,
+        20,
+        26
+      ]
+    },
+    "contraste": {
+      "n": 7,
+      "pct": 23.3,
+      "ids": [
+        3,
+        15,
+        21,
+        22,
+        23,
+        24,
+        27
+      ]
+    },
+    "resena_sobre_envio": {
+      "n": 5,
+      "pct": 16.7,
+      "ids": [
+        0,
+        6,
+        10,
+        25,
+        29
+      ]
+    },
+    "negacion_mal_interpretada": {
+      "n": 5,
+      "pct": 16.7,
+      "ids": [
+        1,
+        8,
+        9,
+        17,
+        18
+      ]
+    },
+    "otros": {
+      "n": 2,
+      "pct": 6.7,
+      "ids": [
+        5,
+        28
+      ]
+    },
+    "sarcasmo": {
+      "n": 0,
+      "pct": 0.0,
+      "ids": []
+    }
+  },
+  "nota": "Muestra sesgada hacia los errores más seguros: el % de ruido de etiqueta NO es el de todo el dataset; es una cota de lo que explica los fallos más graves."
+}
