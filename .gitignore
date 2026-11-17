@@ -10,3 +10,4 @@ reports/informe/
 reports/errores.csv
 src/generar_informe.py
 .claude/
+amazon_reviews_es.csv
