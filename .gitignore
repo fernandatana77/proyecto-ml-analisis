@@ -1,0 +1,12 @@
+data/raw/
+__pycache__/
+.venv/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+data/processed/
+reports/informe/
+reports/errores.csv
+src/generar_informe.py
+.claude/
