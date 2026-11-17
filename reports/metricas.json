@@ -1,0 +1,125 @@
+{
+  "fecha": "2026-11-16T22:56:43",
+  "config": {
+    "n_por_clase": 2754,
+    "ngram_max": 3,
+    "max_features": 10000,
+    "min_df": 5,
+    "algoritmo": "sgd",
+    "epocas": 50,
+    "alpha": 0.0001,
+    "penalizacion": "l2",
+    "paciencia": 5,
+    "umbral": 0.5,
+    "comparar_modelos": true,
+    "random_state": 42
+  },
+  "mejor_epoca": 3,
+  "epocas_ejecutadas": 8,
+  "parada_temprana": true,
+  "tiempo_total_s": 1.37,
+  "n_train": 5508,
+  "n_val": 1187,
+  "n_test": 1187,
+  "vocabulario": 3653,
+  "validacion": {
+    "accuracy": 0.8812131423757371,
+    "precision": 0.8949211908931699,
+    "recall": 0.8631756756756757,
+    "f1": 0.8787618228718831,
+    "f1_macro": 0.881164561312077,
+    "logloss": 0.3289127440572229,
+    "roc_auc": 0.9425675675675677,
+    "pr_auc": 0.9470264021605036
+  },
+  "prueba": {
+    "accuracy": 0.8601516427969671,
+    "precision": 0.8830935251798561,
+    "recall": 0.8293918918918919,
+    "f1": 0.8554006968641115,
+    "f1_macro": 0.8600005115641928,
+    "logloss": 0.35399632359573446,
+    "roc_auc": 0.9297978650919826,
+    "pr_auc": 0.9389737020588516
+  },
+  "matriz_confusion": {
+    "tn": 530,
+    "fp": 65,
+    "fn": 101,
+    "tp": 491
+  },
+  "classification_report": {
+    "Negativo": {
+      "precision": 0.8399366085578447,
+      "recall": 0.8907563025210085,
+      "f1-score": 0.8646003262642741,
+      "support": 595.0
+    },
+    "Positivo": {
+      "precision": 0.8830935251798561,
+      "recall": 0.8293918918918919,
+      "f1-score": 0.8554006968641115,
+      "support": 592.0
+    },
+    "accuracy": 0.8601516427969671,
+    "macro avg": {
+      "precision": 0.8615150668688504,
+      "recall": 0.8600740972064502,
+      "f1-score": 0.8600005115641928,
+      "support": 1187.0
+    },
+    "weighted avg": {
+      "precision": 0.8614605299059751,
+      "recall": 0.8601516427969671,
+      "f1-score": 0.860012137043637,
+      "support": 1187.0
+    }
+  },
+  "comparacion_modelos": [
+    {
+      "modelo": "Dummy",
+      "f1_cv_media": 0.1333,
+      "f1_cv_de": 0.2665,
+      "f1_val": 0.0,
+      "f1_prueba": 0.0,
+      "roc_auc_prueba": 0.5,
+      "tiempo_s": 0.0
+    },
+    {
+      "modelo": "Naive Bayes",
+      "f1_cv_media": 0.8538,
+      "f1_cv_de": 0.0091,
+      "f1_val": 0.8646362098138748,
+      "f1_prueba": 0.8416523235800344,
+      "roc_auc_prueba": 0.9216131047013401,
+      "tiempo_s": 0.002
+    },
+    {
+      "modelo": "Regresión Logística",
+      "f1_cv_media": 0.8641,
+      "f1_cv_de": 0.0104,
+      "f1_val": 0.8762886597938144,
+      "f1_prueba": 0.8601216333622936,
+      "roc_auc_prueba": 0.9321456961162844,
+      "tiempo_s": 0.021
+    },
+    {
+      "modelo": "SVM Lineal",
+      "f1_cv_media": 0.864,
+      "f1_cv_de": 0.0092,
+      "f1_val": 0.8729472774416595,
+      "f1_prueba": 0.8578947368421053,
+      "roc_auc_prueba": 0.9295650692709516,
+      "tiempo_s": 0.013
+    },
+    {
+      "modelo": "SGD por épocas",
+      "f1_cv_media": 0.862,
+      "f1_cv_de": 0.0091,
+      "f1_val": 0.8787618228718831,
+      "f1_prueba": 0.8554006968641115,
+      "roc_auc_prueba": 0.9297978650919826,
+      "tiempo_s": 0.242
+    }
+  ]
+}
